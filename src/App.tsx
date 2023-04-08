@@ -19,13 +19,11 @@ import { Initial } from "./components/Initial"
 export const App = () => (
   <ChakraProvider theme={theme}>
 		<main>
-	<Box minW="100vw" position="relative" minH="100vh" overflowX="hidden">
 			<Routes>
 				<Route path="/" element={<Initial />}/>
 				<Route path="/ponto" element={<PointFinder />}/>
 				<Route path="/medio" element={<Medio />}/>
 			</Routes>
-	</Box>
 		</main>
   </ChakraProvider>
 )

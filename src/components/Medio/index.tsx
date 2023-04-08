@@ -45,13 +45,13 @@ export function Medio() {
     };
 
     return (
-        <>
-			<Box position="absolute" top="1rem" left="1rem">
+        <Box >
+			<Box  position="absolute" top="1rem" left="1rem">
 				<Link as={HashLink} to="/"> { '< Voltar' }</Link>
 			</Box>
-            <Box p={4}>
+            <Box p={4} height={["80vh"]} minH="100%">
                 <Stack spacing={4}>
-                    <Text fontSize="2xl" fontWeight="bold" textAlign="center" mt="2rem">
+                    <Text fontSize="2xl" fontWeight="bold" textAlign="center" mt="5rem">
                         Encontre o ponto médio de um segmento
                     </Text>
                     <Box p={2}>
@@ -145,6 +145,6 @@ export function Medio() {
                 </Stack>
             </Box>
             <Footer />
-        </>
+        </Box>
     );
 }

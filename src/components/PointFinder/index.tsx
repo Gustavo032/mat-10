@@ -104,13 +104,13 @@ export function PointFinder() {
     };
 
     return (
-		<Box minW="100vw" minH="100vh">
-			<Box position="absolute" top="0rem" left="1rem">
-				<Link as={HashLink} to="/"> { '< Voltar' }</Link>
-			</Box>
-			<Box p={4} mt="2rem">
-				<Stack spacing={4}>
+		<Box minW="100%" minH="100%" >
+			<Box p={4} mt="2rem" height="99vh" >
+				<Stack spacing={4} >
 					<Container maxWidth="5xl">
+						<Box position="relative" top="-1rem" left="-1rem">
+							<Link as={HashLink} to="/"> { '< Voltar' }</Link>
+						</Box>
 						<Text fontSize="2xl" fontWeight="bold" textAlign="center">
 							Encontre um ponto no plano cartesiano
 						</Text>
